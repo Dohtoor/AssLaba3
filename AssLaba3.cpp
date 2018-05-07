@@ -11,11 +11,11 @@ int main()
 
 	__asm {
 		mov al, c
-		or al, a
+		and al, a
 		mov a, al
 		not b
 		mov al, b
-		and al, a
+		or al, a
 		or al, d
 		mov b, al
 	}
