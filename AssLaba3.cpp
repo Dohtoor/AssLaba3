@@ -11,11 +11,11 @@ int main()
 
 	__asm {
 		not b
-			mov al, b
-			and al, c
-			or al, a
-			and al, d
-			mov b, al
+		mov al, b
+		and al, c
+		or al, a
+		and al, d
+		mov b, al
 	}
 
 	std::cout << std::hex << static_cast<int>(b) << "h" << std::endl;
