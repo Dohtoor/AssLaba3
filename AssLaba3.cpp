@@ -12,9 +12,9 @@ int main()
 	__asm {
 		not b
 			mov al, b
-			and al, c
-			or al, a
-			and al, d
+			or al, c
+			and al, a
+			or al, d
 			mov b, al
 	}
 
