@@ -18,7 +18,7 @@ int main()
 			mov b, al
 	}
 
-	std::cout << std::hex << static_cast<int>(b) << "h" << std::endl;
+	std::cout << std::hex << static_cast<unsigned int>(static_cast<unsigned char>(b)) << "h" << std::endl;
 	system("pause");
 	return 0;
 }
