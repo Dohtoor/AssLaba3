@@ -10,9 +10,11 @@ int main()
 	char a = 29, b = 18, c = 31, d = -14;
 
 	__asm {
+		mov al, c
+		or al, a
+		mov a, al
 		not b
 		mov al, b
-		or al, c
 		and al, a
 		or al, d
 		mov b, al
